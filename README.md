@@ -1,6 +1,6 @@
 # vscode-configs
 
-My VS Code Configs.
+Guany VS Code Configs.
 
 ## License
 
