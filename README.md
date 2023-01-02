@@ -1,6 +1,6 @@
-# vscode-snippets
+# vscode-configs
 
-My VS Code Snippets.
+My VS Code Configs.
 
 ## License
 
