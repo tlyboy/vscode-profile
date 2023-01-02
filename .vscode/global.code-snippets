@@ -1,4 +1,45 @@
 {
+  "Axios Request JS": {
+    "body": [
+      "import axios from 'axios'",
+      "",
+      "const request = axios.create({",
+      "\tbaseURL: '$0'",
+      "})",
+      "",
+      "// 添加请求拦截器",
+      "request.interceptors.request.use(",
+      "\tfunction (config) {",
+      "\t\t// 在发送请求之前做些什么",
+      "\t\treturn config",
+      "\t},",
+      "\tfunction (error) {",
+      "\t\t// 对请求错误做些什么",
+      "\t\treturn Promise.reject(error)",
+      "\t}",
+      ")",
+      "",
+      "// 添加响应拦截器",
+      "request.interceptors.response.use(",
+      "\tfunction (response) {",
+      "\t\t// 2xx 范围内的状态码都会触发该函数。",
+      "\t\t// 对响应数据做点什么",
+      "\t\treturn response",
+      "\t},",
+      "\tfunction (error) {",
+      "\t\t// 超出 2xx 范围的状态码都会触发该函数。",
+      "\t\t// 对响应错误做点什么",
+      "\t\treturn Promise.reject(error)",
+      "\t}",
+      ")",
+      "",
+      "export default request",
+      ""
+    ],
+    "description": "Axios Request JS",
+    "prefix": "axios-request-js",
+    "scope": "javascript"
+  },
   "Base CSS": {
     "body": [
       "*,",
@@ -25,47 +66,6 @@
     "prefix": "base-css",
     "scope": "css,scss,less,stylus"
   },
-  "Axios Request JS": {
-    "body": [
-      "import axios from 'axios'",
-      "",
-      "const request = axios.create({",
-      "\tbaseURL: '$0'",
-      "})",
-      "",
-      "// 添加请求拦截器",
-      "request.interceptors.request.use(",
-      "\tfunction (config) {",
-      "\t\t// 在发送请求之前做些什么",
-      "\t\treturn config",
-      "\t},",
-      "\tfunction (error) {",
-      "\t\t// 对请求错误做些什么",
-      "\t\treturn Promise.reject(error)",
-      "\t}",
-      ")",
-      "",
-      "// 添加响应拦截器",
-      "request.interceptors.response.use(",
-      "\tfunction (response) {",
-      "\t\t// 2xx 范围内的状态码都会触发该函数。",
-      "\t\t// 对响应数据做点什么",
-      "\t\treturn response.data",
-      "\t},",
-      "\tfunction (error) {",
-      "\t\t// 超出 2xx 范围的状态码都会触发该函数。",
-      "\t\t// 对响应错误做点什么",
-      "\t\treturn Promise.reject(error)",
-      "\t}",
-      ")",
-      "",
-      "export default request",
-      ""
-    ],
-    "description": "Axios Request JS",
-    "prefix": "axios-request-js",
-    "scope": "javascript"
-  },
   "Vue Router 3": {
     "body": [
       "import Vue from 'vue'",
@@ -84,6 +84,36 @@
     ],
     "description": "Vue Router 3",
     "prefix": "vue-router-3",
+    "scope": "javascript"
+  },
+  "Vue Router 3 Route": {
+    "body": ["{", "\tpath: '$2',", "\tname: '$3',", "\tcomponent: $1", "}"],
+    "description": "Vue Router 3 Route",
+    "prefix": "vue-router-3-route",
+    "scope": "javascript"
+  },
+  "Vue Router 3 Route lazy-loaded": {
+    "body": [
+      "{",
+      "\tpath: '$2',",
+      "\tname: '$3',",
+      "\tcomponent: () => import(/* webpackChunkName: \"$4\" */ '../views/$1')",
+      "}"
+    ],
+    "description": "Vue Router 3 Route lazy-loaded",
+    "prefix": "vue-router-3-route-lazy-loaded",
+    "scope": "javascript"
+  },
+  "Vue Router 3 afterEach": {
+    "body": ["router.afterEach((to, from) => {", "\t$1", "})", ""],
+    "description": "Vue Router 3 afterEach",
+    "prefix": "vue-router-3-afterEach",
+    "scope": "javascript"
+  },
+  "Vue Router 3 beforeEach": {
+    "body": ["router.beforeEach((to, from, next) => {", "\t$1", "})", ""],
+    "description": "Vue Router 3 beforeEach",
+    "prefix": "vue-router-3-beforeEach",
     "scope": "javascript"
   },
   "Vue2": {
@@ -153,6 +183,120 @@
     ],
     "description": "Vue2 SCSS",
     "prefix": "vue2-scss",
+    "scope": "vue"
+  },
+  "Vue3": {
+    "body": [
+      "<script setup>",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue3",
+    "prefix": "vue3",
+    "scope": "vue"
+  },
+  "Vue3 Less": {
+    "body": [
+      "<script setup>",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style lang=\"less\" scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue3 Less",
+    "prefix": "vue3-less",
+    "scope": "vue"
+  },
+  "Vue3 SCSS": {
+    "body": [
+      "<script setup>",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue3 SCSS",
+    "prefix": "vue3-scss",
+    "scope": "vue"
+  },
+  "Vue3 TS": {
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue3 TS",
+    "prefix": "vue3-ts",
+    "scope": "vue"
+  },
+  "Vue3 TS Less": {
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style lang=\"less\" scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue3 TS Less",
+    "prefix": "vue3-ts-less",
+    "scope": "vue"
+  },
+  "Vue3 TS SCSS": {
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue3 TS SCSS",
+    "prefix": "vue3-ts-scss",
     "scope": "vue"
   },
   "Vuex3 Module": {
