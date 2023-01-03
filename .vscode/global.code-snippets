@@ -1,5 +1,5 @@
 {
-  "Axios Request": {
+  "Axios request": {
     "body": [
       "import axios from 'axios'",
       "",
@@ -36,11 +36,11 @@
       "export default request",
       ""
     ],
-    "description": "Axios Request",
+    "description": "Axios request",
     "prefix": "axios-request",
     "scope": "javascript"
   },
-  "CSS Base": {
+  "CSS base": {
     "body": [
       "*,",
       "::before,",
@@ -62,39 +62,9 @@
       "}",
       ""
     ],
-    "description": "CSS Base",
+    "description": "CSS base",
     "prefix": "css-base",
     "scope": "css,scss,less,stylus"
-  },
-  "Vue Router Route": {
-    "body": ["{", "\tpath: '$2',", "\tname: '$3',", "\tcomponent: $1", "}"],
-    "description": "Vue Router Route",
-    "prefix": "vue-router-route",
-    "scope": "javascript"
-  },
-  "Vue Router Route lazy-loaded": {
-    "body": [
-      "{",
-      "\tpath: '$2',",
-      "\tname: '$3',",
-      "\tcomponent: () => import('../views/$1')",
-      "}"
-    ],
-    "description": "Vue Router Route lazy-loaded",
-    "prefix": "vue-router-route-lazy-loaded",
-    "scope": "javascript"
-  },
-  "Vue Router afterEach": {
-    "body": ["router.afterEach((to, from) => {", "\t$1", "})", ""],
-    "description": "Vue Router afterEach",
-    "prefix": "vue-router-afterEach",
-    "scope": "javascript"
-  },
-  "Vue Router beforeEach": {
-    "body": ["router.beforeEach((to, from, next) => {", "\t$1", "})", ""],
-    "description": "Vue Router beforeEach",
-    "prefix": "vue-router-beforeEach",
-    "scope": "javascript"
   },
   "Vue": {
     "body": [
@@ -142,6 +112,55 @@
     "prefix": "vue-less",
     "scope": "vue"
   },
+  "Vue Less setup": {
+    "body": [
+      "<script setup>",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style lang=\"less\" scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue Less setup",
+    "prefix": "vue-less-setup",
+    "scope": "vue"
+  },
+  "Vue Router route": {
+    "body": ["{", "\tpath: '$2',", "\tname: '$3',", "\tcomponent: $1", "}"],
+    "description": "Vue Router route",
+    "prefix": "vue-router-route",
+    "scope": "javascript"
+  },
+  "Vue Router route lazy-loaded": {
+    "body": [
+      "{",
+      "\tpath: '$2',",
+      "\tname: '$3',",
+      "\tcomponent: () => import('../views/$1')",
+      "}"
+    ],
+    "description": "Vue Router route lazy-loaded",
+    "prefix": "vue-router-route-lazy-loaded",
+    "scope": "javascript"
+  },
+  "Vue Router afterEach": {
+    "body": ["router.afterEach((to, from) => {", "\t$1", "})", ""],
+    "description": "Vue Router afterEach",
+    "prefix": "vue-router-afterEach",
+    "scope": "javascript"
+  },
+  "Vue Router beforeEach": {
+    "body": ["router.beforeEach((to, from, next) => {", "\t$1", "})", ""],
+    "description": "Vue Router beforeEach",
+    "prefix": "vue-router-beforeEach",
+    "scope": "javascript"
+  },
   "Vue SCSS": {
     "body": [
       "<template>",
@@ -165,44 +184,6 @@
     "prefix": "vue-scss",
     "scope": "vue"
   },
-  "Vue setup": {
-    "body": [
-      "<script setup>",
-      "$1",
-      "</script>",
-      "",
-      "<template>",
-      "\t$2",
-      "</template>",
-      "",
-      "<style scoped>",
-      "$0",
-      "</style>",
-      ""
-    ],
-    "description": "Vue setup",
-    "prefix": "vue-setup",
-    "scope": "vue"
-  },
-  "Vue Less setup": {
-    "body": [
-      "<script setup>",
-      "$1",
-      "</script>",
-      "",
-      "<template>",
-      "\t$2",
-      "</template>",
-      "",
-      "<style lang=\"less\" scoped>",
-      "$0",
-      "</style>",
-      ""
-    ],
-    "description": "Vue Less setup",
-    "prefix": "vue-less-setup",
-    "scope": "vue"
-  },
   "Vue SCSS setup": {
     "body": [
       "<script setup>",
@@ -220,25 +201,6 @@
     ],
     "description": "Vue 3 SCSS",
     "prefix": "vue-scss-setup",
-    "scope": "vue"
-  },
-  "Vue TS setup": {
-    "body": [
-      "<script setup lang=\"ts\">",
-      "$1",
-      "</script>",
-      "",
-      "<template>",
-      "\t$2",
-      "</template>",
-      "",
-      "<style scoped>",
-      "$0",
-      "</style>",
-      ""
-    ],
-    "description": "Vue TS setup",
-    "prefix": "vue-ts-setup",
     "scope": "vue"
   },
   "Vue TS Less setup": {
@@ -279,7 +241,45 @@
     "prefix": "vue-ts-scss-setup",
     "scope": "vue"
   },
-  "Vuex Module": {
+  "Vue TS setup": {
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue TS setup",
+    "prefix": "vue-ts-setup",
+    "scope": "vue"
+  },
+  "Vue setup": {
+    "body": [
+      "<script setup>",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue setup",
+    "prefix": "vue-setup",
+    "scope": "vue"
+  },
+  "Vuex module": {
     "body": [
       "export default {",
       "\tnamespaced: true,",
@@ -298,8 +298,29 @@
       "}",
       ""
     ],
-    "description": "Vuex Module",
+    "description": "Vuex module",
     "prefix": "vuex-module",
+    "scope": "javascript"
+  },
+  "storage": {
+    "body": [
+      "const KEY = '${1:assess_token}'",
+      "",
+      "export function getToken() {",
+      "\treturn localStorage.getItem(KEY)",
+      "}",
+      "",
+      "export function setToken(token) {",
+      "\tlocalStorage.setItem(KEY, token)",
+      "}",
+      "",
+      "export function removeToken() {",
+      "\tlocalStorage.removeItem(KEY)",
+      "}",
+      ""
+    ],
+    "description": "storage",
+    "prefix": "storage",
     "scope": "javascript"
   }
 }
