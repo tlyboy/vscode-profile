@@ -1,5 +1,5 @@
 {
-  "Axios Request JS": {
+  "Axios Request": {
     "body": [
       "import axios from 'axios'",
       "",
@@ -36,11 +36,11 @@
       "export default request",
       ""
     ],
-    "description": "Axios Request JS",
-    "prefix": "axios-request-js",
+    "description": "Axios Request",
+    "prefix": "axios-request",
     "scope": "javascript"
   },
-  "Base CSS": {
+  "CSS Base": {
     "body": [
       "*,",
       "::before,",
@@ -62,61 +62,41 @@
       "}",
       ""
     ],
-    "description": "Base CSS",
-    "prefix": "base-css",
+    "description": "CSS Base",
+    "prefix": "css-base",
     "scope": "css,scss,less,stylus"
   },
-  "Vue Router 3": {
-    "body": [
-      "import Vue from 'vue'",
-      "import VueRouter from 'vue-router'",
-      "",
-      "Vue.use(VueRouter)",
-      "",
-      "const router = new VueRouter({",
-      "\tmode: 'history',",
-      "\tbase: process.env.BASE_URL,",
-      "\troutes: [$0]",
-      "})",
-      "",
-      "export default router",
-      ""
-    ],
-    "description": "Vue Router 3",
-    "prefix": "vue-router-3",
-    "scope": "javascript"
-  },
-  "Vue Router 3 Route": {
+  "Vue Router Route": {
     "body": ["{", "\tpath: '$2',", "\tname: '$3',", "\tcomponent: $1", "}"],
-    "description": "Vue Router 3 Route",
-    "prefix": "vue-router-3-route",
+    "description": "Vue Router Route",
+    "prefix": "vue-router-route",
     "scope": "javascript"
   },
-  "Vue Router 3 Route lazy-loaded": {
+  "Vue Router Route lazy-loaded": {
     "body": [
       "{",
       "\tpath: '$2',",
       "\tname: '$3',",
-      "\tcomponent: () => import(/* webpackChunkName: \"$4\" */ '../views/$1')",
+      "\tcomponent: () => import('../views/$1')",
       "}"
     ],
-    "description": "Vue Router 3 Route lazy-loaded",
-    "prefix": "vue-router-3-route-lazy-loaded",
+    "description": "Vue Router Route lazy-loaded",
+    "prefix": "vue-router-route-lazy-loaded",
     "scope": "javascript"
   },
-  "Vue Router 3 afterEach": {
+  "Vue Router afterEach": {
     "body": ["router.afterEach((to, from) => {", "\t$1", "})", ""],
-    "description": "Vue Router 3 afterEach",
-    "prefix": "vue-router-3-afterEach",
+    "description": "Vue Router afterEach",
+    "prefix": "vue-router-afterEach",
     "scope": "javascript"
   },
-  "Vue Router 3 beforeEach": {
+  "Vue Router beforeEach": {
     "body": ["router.beforeEach((to, from, next) => {", "\t$1", "})", ""],
-    "description": "Vue Router 3 beforeEach",
-    "prefix": "vue-router-3-beforeEach",
+    "description": "Vue Router beforeEach",
+    "prefix": "vue-router-beforeEach",
     "scope": "javascript"
   },
-  "Vue2": {
+  "Vue": {
     "body": [
       "<template>",
       "\t<${1:div}>",
@@ -135,11 +115,11 @@
       "</style>",
       ""
     ],
-    "description": "Vue2",
-    "prefix": "vue2",
+    "description": "Vue",
+    "prefix": "vue",
     "scope": "vue"
   },
-  "Vue2 Less": {
+  "Vue Less": {
     "body": [
       "<template>",
       "\t<${1:div}>",
@@ -158,11 +138,11 @@
       "</style>",
       ""
     ],
-    "description": "Vue2 Less",
-    "prefix": "vue2-less",
+    "description": "Vue Less",
+    "prefix": "vue-less",
     "scope": "vue"
   },
-  "Vue2 SCSS": {
+  "Vue SCSS": {
     "body": [
       "<template>",
       "\t<${1:div}>",
@@ -181,11 +161,11 @@
       "</style>",
       ""
     ],
-    "description": "Vue2 SCSS",
-    "prefix": "vue2-scss",
+    "description": "Vue SCSS",
+    "prefix": "vue-scss",
     "scope": "vue"
   },
-  "Vue3": {
+  "Vue setup": {
     "body": [
       "<script setup>",
       "$1",
@@ -200,11 +180,11 @@
       "</style>",
       ""
     ],
-    "description": "Vue3",
-    "prefix": "vue3",
+    "description": "Vue setup",
+    "prefix": "vue-setup",
     "scope": "vue"
   },
-  "Vue3 Less": {
+  "Vue Less setup": {
     "body": [
       "<script setup>",
       "$1",
@@ -219,11 +199,11 @@
       "</style>",
       ""
     ],
-    "description": "Vue3 Less",
-    "prefix": "vue3-less",
+    "description": "Vue Less setup",
+    "prefix": "vue-less-setup",
     "scope": "vue"
   },
-  "Vue3 SCSS": {
+  "Vue SCSS setup": {
     "body": [
       "<script setup>",
       "$1",
@@ -238,11 +218,11 @@
       "</style>",
       ""
     ],
-    "description": "Vue3 SCSS",
-    "prefix": "vue3-scss",
+    "description": "Vue 3 SCSS",
+    "prefix": "vue-scss-setup",
     "scope": "vue"
   },
-  "Vue3 TS": {
+  "Vue TS setup": {
     "body": [
       "<script setup lang=\"ts\">",
       "$1",
@@ -257,11 +237,11 @@
       "</style>",
       ""
     ],
-    "description": "Vue3 TS",
-    "prefix": "vue3-ts",
+    "description": "Vue TS setup",
+    "prefix": "vue-ts-setup",
     "scope": "vue"
   },
-  "Vue3 TS Less": {
+  "Vue TS Less setup": {
     "body": [
       "<script setup lang=\"ts\">",
       "$1",
@@ -276,11 +256,11 @@
       "</style>",
       ""
     ],
-    "description": "Vue3 TS Less",
-    "prefix": "vue3-ts-less",
+    "description": "Vue TS Less setup",
+    "prefix": "vue-ts-less-setup",
     "scope": "vue"
   },
-  "Vue3 TS SCSS": {
+  "Vue TS SCSS setup": {
     "body": [
       "<script setup lang=\"ts\">",
       "$1",
@@ -295,11 +275,11 @@
       "</style>",
       ""
     ],
-    "description": "Vue3 TS SCSS",
-    "prefix": "vue3-ts-scss",
+    "description": "Vue TS SCSS setup",
+    "prefix": "vue-ts-scss-setup",
     "scope": "vue"
   },
-  "Vuex3 Module": {
+  "Vuex Module": {
     "body": [
       "export default {",
       "\tnamespaced: true,",
@@ -318,38 +298,8 @@
       "}",
       ""
     ],
-    "description": "vuex3 Module",
-    "prefix": "vuex3-module",
-    "scope": "javascript"
-  },
-  "Vuex3 Store": {
-    "body": [
-      "import Vue from 'vue'",
-      "import Vuex from 'vuex'",
-      "",
-      "Vue.use(Vuex)",
-      "",
-      "export default new Vuex.Store({",
-      "\tstate: {",
-      "\t\t$1",
-      "\t},",
-      "\tgetters: {",
-      "\t\t$2",
-      "\t},",
-      "\tmutations: {",
-      "\t\t$3",
-      "\t},",
-      "\tactions: {",
-      "\t\t$4",
-      "\t},",
-      "\tmodules: {",
-      "\t\t$0",
-      "\t}",
-      "})",
-      ""
-    ],
-    "description": "Vuex3 Store",
-    "prefix": "vuex3-store",
+    "description": "Vuex Module",
+    "prefix": "vuex-module",
     "scope": "javascript"
   }
 }
