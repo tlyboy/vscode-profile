@@ -1,5 +1,5 @@
 {
-  "Axios request": {
+  "Import Axios request": {
     "body": [
       "import axios from 'axios'",
       "",
@@ -36,8 +36,8 @@
       "export default request",
       ""
     ],
-    "description": "Axios request",
-    "prefix": "axios-request",
+    "description": "Import Axios request",
+    "prefix": "import-axios-request",
     "scope": "javascript"
   },
   "CSS base": {
@@ -86,7 +86,7 @@
       ""
     ],
     "description": "Vue",
-    "prefix": "vue",
+    "prefix": "<template> vue",
     "scope": "vue"
   },
   "Vue Less": {
@@ -109,7 +109,7 @@
       ""
     ],
     "description": "Vue Less",
-    "prefix": "vue-less",
+    "prefix": "<template> vue-less",
     "scope": "vue"
   },
   "Vue Less setup": {
@@ -128,7 +128,7 @@
       ""
     ],
     "description": "Vue Less setup",
-    "prefix": "vue-less-setup",
+    "prefix": "<template> vue-less-setup",
     "scope": "vue"
   },
   "Vue Router route": {
@@ -181,7 +181,7 @@
       ""
     ],
     "description": "Vue SCSS",
-    "prefix": "vue-scss",
+    "prefix": "<template> vue-scss",
     "scope": "vue"
   },
   "Vue SCSS setup": {
@@ -200,7 +200,7 @@
       ""
     ],
     "description": "Vue 3 SCSS",
-    "prefix": "vue-scss-setup",
+    "prefix": "<template> vue-scss-setup",
     "scope": "vue"
   },
   "Vue TS Less setup": {
@@ -219,7 +219,7 @@
       ""
     ],
     "description": "Vue TS Less setup",
-    "prefix": "vue-ts-less-setup",
+    "prefix": "<template> vue-ts-less-setup",
     "scope": "vue"
   },
   "Vue TS SCSS setup": {
@@ -238,7 +238,7 @@
       ""
     ],
     "description": "Vue TS SCSS setup",
-    "prefix": "vue-ts-scss-setup",
+    "prefix": "<template> vue-ts-scss-setup",
     "scope": "vue"
   },
   "Vue TS setup": {
@@ -257,7 +257,7 @@
       ""
     ],
     "description": "Vue TS setup",
-    "prefix": "vue-ts-setup",
+    "prefix": "<template> vue-ts-setup",
     "scope": "vue"
   },
   "Vue setup": {
@@ -276,10 +276,10 @@
       ""
     ],
     "description": "Vue setup",
-    "prefix": "vue-setup",
+    "prefix": "<template> vue-setup",
     "scope": "vue"
   },
-  "Vuex module": {
+  "Export Default Vuex module": {
     "body": [
       "export default {",
       "\tnamespaced: true,",
@@ -298,29 +298,29 @@
       "}",
       ""
     ],
-    "description": "Vuex module",
-    "prefix": "vuex-module",
+    "description": "Export Default Vuex module",
+    "prefix": "export-default-vuex-module",
     "scope": "javascript"
   },
-  "storage": {
+  "Const storage": {
     "body": [
-      "const KEY = '${1:assess_token}'",
+      "const ASSESS_TOKEN = 'assess_token'",
       "",
-      "export function getToken() {",
-      "\treturn localStorage.getItem(KEY)",
+      "export function getAssessToken() {",
+      "\treturn localStorage.getItem(ASSESS_TOKEN)",
       "}",
       "",
-      "export function setToken(token) {",
-      "\tlocalStorage.setItem(KEY, token)",
+      "export function setAssessToken(assess_token) {",
+      "\tlocalStorage.setItem(ASSESS_TOKEN, assess_token)",
       "}",
       "",
-      "export function removeToken() {",
-      "\tlocalStorage.removeItem(KEY)",
+      "export function removeAssessToken() {",
+      "\tlocalStorage.removeItem(ASSESS_TOKEN)",
       "}",
       ""
     ],
-    "description": "storage",
-    "prefix": "storage",
+    "description": "Const storage",
+    "prefix": "const-storage",
     "scope": "javascript"
   }
 }
