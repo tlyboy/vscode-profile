@@ -22,7 +22,7 @@
       ""
     ],
     "description": "CSS base",
-    "prefix": "css-base",
+    "prefix": "base",
     "scope": "css,scss,less,stylus"
   },
   "Const Vuex module": {
@@ -154,16 +154,16 @@
     "prefix": "<script>",
     "scope": "vue"
   },
-  "Script TS setup": {
-    "body": ["<script setup lang=\"ts\">", "$1", "</script>", ""],
-    "description": "Script TS setup",
-    "prefix": "<script> ts-setup",
-    "scope": "vue"
-  },
   "Script setup": {
     "body": ["<script setup>", "$1", "</script>", ""],
     "description": "Script setup",
     "prefix": "<script> setup",
+    "scope": "vue"
+  },
+  "Script setup TS ": {
+    "body": ["<script setup lang=\"ts\">", "$1", "</script>", ""],
+    "description": "Script setup TS",
+    "prefix": "<script> setup-ts",
     "scope": "vue"
   },
   "Style": {
@@ -226,7 +226,7 @@
       ""
     ],
     "description": "Vue",
-    "prefix": "<template> vue",
+    "prefix": "<vue>",
     "scope": "vue"
   },
   "Vue Less": {
@@ -247,26 +247,7 @@
       ""
     ],
     "description": "Vue Less",
-    "prefix": "<template> vue-less",
-    "scope": "vue"
-  },
-  "Vue Less setup": {
-    "body": [
-      "<script setup>",
-      "$1",
-      "</script>",
-      "",
-      "<template>",
-      "\t$2",
-      "</template>",
-      "",
-      "<style lang=\"less\" scoped>",
-      "$0",
-      "</style>",
-      ""
-    ],
-    "description": "Vue Less setup",
-    "prefix": "<template> vue-less-setup",
+    "prefix": "<vue> less",
     "scope": "vue"
   },
   "Vue Router afterEach": {
@@ -317,83 +298,7 @@
       ""
     ],
     "description": "Vue SCSS",
-    "prefix": "<template> vue-scss",
-    "scope": "vue"
-  },
-  "Vue SCSS setup": {
-    "body": [
-      "<script setup>",
-      "$1",
-      "</script>",
-      "",
-      "<template>",
-      "\t$2",
-      "</template>",
-      "",
-      "<style lang=\"scss\" scoped>",
-      "$0",
-      "</style>",
-      ""
-    ],
-    "description": "Vue 3 SCSS",
-    "prefix": "<template> vue-scss-setup",
-    "scope": "vue"
-  },
-  "Vue TS Less setup": {
-    "body": [
-      "<script setup lang=\"ts\">",
-      "$1",
-      "</script>",
-      "",
-      "<template>",
-      "\t$2",
-      "</template>",
-      "",
-      "<style lang=\"less\" scoped>",
-      "$0",
-      "</style>",
-      ""
-    ],
-    "description": "Vue TS Less setup",
-    "prefix": "<template> vue-ts-less-setup",
-    "scope": "vue"
-  },
-  "Vue TS SCSS setup": {
-    "body": [
-      "<script setup lang=\"ts\">",
-      "$1",
-      "</script>",
-      "",
-      "<template>",
-      "\t$2",
-      "</template>",
-      "",
-      "<style lang=\"scss\" scoped>",
-      "$0",
-      "</style>",
-      ""
-    ],
-    "description": "Vue TS SCSS setup",
-    "prefix": "<template> vue-ts-scss-setup",
-    "scope": "vue"
-  },
-  "Vue TS setup": {
-    "body": [
-      "<script setup lang=\"ts\">",
-      "$1",
-      "</script>",
-      "",
-      "<template>",
-      "\t$2",
-      "</template>",
-      "",
-      "<style scoped>",
-      "$0",
-      "</style>",
-      ""
-    ],
-    "description": "Vue TS setup",
-    "prefix": "<template> vue-ts-setup",
+    "prefix": "<vue> scss",
     "scope": "vue"
   },
   "Vue setup": {
@@ -412,7 +317,102 @@
       ""
     ],
     "description": "Vue setup",
-    "prefix": "<template> vue-setup",
+    "prefix": "<vue> setup",
+    "scope": "vue"
+  },
+  "Vue setup Less": {
+    "body": [
+      "<script setup>",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style lang=\"less\" scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue setup Less",
+    "prefix": "<vue> setup-less",
+    "scope": "vue"
+  },
+  "Vue setup SCSS": {
+    "body": [
+      "<script setup>",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue setup SCSS",
+    "prefix": "<vue> setup-scss",
+    "scope": "vue"
+  },
+  "Vue setup TS": {
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue setup TS",
+    "prefix": "<vue> setup-ts",
+    "scope": "vue"
+  },
+  "Vue setup TS Less": {
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style lang=\"less\" scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue setup TS Less",
+    "prefix": "<vue> setup-ts-less",
+    "scope": "vue"
+  },
+  "Vue setup TS SCSS": {
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "\t$2",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "$0",
+      "</style>",
+      ""
+    ],
+    "description": "Vue setup TS SCSS",
+    "prefix": "<vue> setup-ts-scss",
     "scope": "vue"
   }
 }
