@@ -1,4 +1,105 @@
 {
+  "CSS base": {
+    "body": [
+      "*,",
+      "::before,",
+      "::after {",
+      "\tbox-sizing: border-box;",
+      "}",
+      "",
+      "body {",
+      "\tfont-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,",
+      "\t\t'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,",
+      "\t\t'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';",
+      "\t-webkit-font-smoothing: antialiased;",
+      "\t-moz-osx-font-smoothing: grayscale;",
+      "}",
+      "",
+      "code {",
+      "\tfont-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,",
+      "\t\t'Liberation Mono', 'Courier New', monospace;",
+      "}",
+      ""
+    ],
+    "description": "CSS base",
+    "prefix": "css-base",
+    "scope": "css,scss,less,stylus"
+  },
+  "Const Vuex module": {
+    "body": [
+      "const state = {",
+      "\t$1",
+      "}",
+      "",
+      "const getters = {",
+      "\t$2",
+      "}",
+      "",
+      "const mutations = {",
+      "\t$3",
+      "}",
+      "",
+      "const actions = {",
+      "\t$4",
+      "}",
+      "",
+      "export default {",
+      "\tnamespaced: true,",
+      "\tstate,",
+      "\tgetters,",
+      "\tmutations,",
+      "\tactions",
+      "}",
+      ""
+    ],
+    "description": "Const Vuex module",
+    "prefix": "const-vuex-module",
+    "scope": "javascript"
+  },
+  "Const storage": {
+    "body": [
+      "const ASSESS_TOKEN = 'assess_token'",
+      "",
+      "export function getAssessToken() {",
+      "\treturn localStorage.getItem(ASSESS_TOKEN)",
+      "}",
+      "",
+      "export function setAssessToken(assess_token) {",
+      "\tlocalStorage.setItem(ASSESS_TOKEN, assess_token)",
+      "}",
+      "",
+      "export function removeAssessToken() {",
+      "\tlocalStorage.removeItem(ASSESS_TOKEN)",
+      "}",
+      ""
+    ],
+    "description": "Const storage",
+    "prefix": "const-storage",
+    "scope": "javascript"
+  },
+  "Export Default Vuex module": {
+    "body": [
+      "export default {",
+      "\tnamespaced: true,",
+      "\tstate: {",
+      "\t\t$1",
+      "\t},",
+      "\tgetters: {",
+      "\t\t$2",
+      "\t},",
+      "\tmutations: {",
+      "\t\t$3",
+      "\t},",
+      "\tactions: {",
+      "\t\t$0",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "Export Default Vuex module",
+    "prefix": "export-default-vuex-module",
+    "scope": "javascript"
+  },
   "Import Axios request": {
     "body": [
       "import axios from 'axios'",
@@ -40,38 +141,77 @@
     "prefix": "import-axios-request",
     "scope": "javascript"
   },
-  "CSS base": {
+  "Script": {
     "body": [
-      "*,",
-      "::before,",
-      "::after {",
-      "\tbox-sizing: border-box;",
+      "<script>",
+      "export default {",
+      "\tname: '$1'",
       "}",
-      "",
-      "body {",
-      "\tfont-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,",
-      "\t\t'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,",
-      "\t\t'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';",
-      "\t-webkit-font-smoothing: antialiased;",
-      "\t-moz-osx-font-smoothing: grayscale;",
-      "}",
-      "",
-      "code {",
-      "\tfont-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,",
-      "\t\t'Liberation Mono', 'Courier New', monospace;",
-      "}",
+      "</script>",
       ""
     ],
-    "description": "CSS base",
-    "prefix": "css-base",
-    "scope": "css,scss,less,stylus"
+    "description": "Script",
+    "prefix": "<script>",
+    "scope": "vue"
+  },
+  "Script TS setup": {
+    "body": ["<script setup lang=\"ts\">", "$1", "</script>", ""],
+    "description": "Script TS setup",
+    "prefix": "<script> ts-setup",
+    "scope": "vue"
+  },
+  "Script setup": {
+    "body": ["<script setup>", "$1", "</script>", ""],
+    "description": "Script setup",
+    "prefix": "<script> setup",
+    "scope": "vue"
+  },
+  "Style": {
+    "body": ["<style>", "$1", "</style>", ""],
+    "description": "Style",
+    "prefix": "<style>",
+    "scope": "vue"
+  },
+  "Style Less": {
+    "body": ["<style lang=\"less\">", "$1", "</style>", ""],
+    "description": "Style Less",
+    "prefix": "<style> less",
+    "scope": "vue"
+  },
+  "Style Less scoped": {
+    "body": ["<style lang=\"less\" scoped>", "$1", "</style>", ""],
+    "description": "Style Less scoped",
+    "prefix": "<style> less-scoped",
+    "scope": "vue"
+  },
+  "Style SCSS": {
+    "body": ["<style lang=\"scss\">", "$1", "</style>", ""],
+    "description": "Style SCSS",
+    "prefix": "<style> scss",
+    "scope": "vue"
+  },
+  "Style SCSS scoped": {
+    "body": ["<style lang=\"scss\" scoped>", "$1", "</style>", ""],
+    "description": "Style SCSS scoped",
+    "prefix": "<style> scss-scoped",
+    "scope": "vue"
+  },
+  "Style scoped": {
+    "body": ["<style scoped>", "$1", "</style>", ""],
+    "description": "Style scoped",
+    "prefix": "<style> scoped",
+    "scope": "vue"
+  },
+  "Template": {
+    "body": ["<template>", "\t$1", "</template>", ""],
+    "description": "Template",
+    "prefix": "<template>",
+    "scope": "vue"
   },
   "Vue": {
     "body": [
       "<template>",
-      "\t<${1:div}>",
-      "\t\t$2",
-      "\t</div>",
+      "\t$1",
       "</template>",
       "",
       "<script>",
@@ -92,9 +232,7 @@
   "Vue Less": {
     "body": [
       "<template>",
-      "\t<${1:div}>",
-      "\t\t$2",
-      "\t</div>",
+      "\t$1",
       "</template>",
       "",
       "<script>",
@@ -131,6 +269,18 @@
     "prefix": "<template> vue-less-setup",
     "scope": "vue"
   },
+  "Vue Router afterEach": {
+    "body": ["router.afterEach((to, from) => {", "\t$1", "})", ""],
+    "description": "Vue Router afterEach",
+    "prefix": "vue-router-afterEach",
+    "scope": "javascript"
+  },
+  "Vue Router beforeEach": {
+    "body": ["router.beforeEach((to, from, next) => {", "\t$1", "})", ""],
+    "description": "Vue Router beforeEach",
+    "prefix": "vue-router-beforeEach",
+    "scope": "javascript"
+  },
   "Vue Router route": {
     "body": ["{", "\tpath: '$2',", "\tname: '$3',", "\tcomponent: $1", "}"],
     "description": "Vue Router route",
@@ -149,24 +299,10 @@
     "prefix": "vue-router-route-lazy-loaded",
     "scope": "javascript"
   },
-  "Vue Router afterEach": {
-    "body": ["router.afterEach((to, from) => {", "\t$1", "})", ""],
-    "description": "Vue Router afterEach",
-    "prefix": "vue-router-afterEach",
-    "scope": "javascript"
-  },
-  "Vue Router beforeEach": {
-    "body": ["router.beforeEach((to, from, next) => {", "\t$1", "})", ""],
-    "description": "Vue Router beforeEach",
-    "prefix": "vue-router-beforeEach",
-    "scope": "javascript"
-  },
   "Vue SCSS": {
     "body": [
       "<template>",
-      "\t<${1:div}>",
-      "\t\t$2",
-      "\t</div>",
+      "\t$1",
       "</template>",
       "",
       "<script>",
@@ -278,80 +414,5 @@
     "description": "Vue setup",
     "prefix": "<template> vue-setup",
     "scope": "vue"
-  },
-  "Export Default Vuex module": {
-    "body": [
-      "export default {",
-      "\tnamespaced: true,",
-      "\tstate: {",
-      "\t\t$1",
-      "\t},",
-      "\tgetters: {",
-      "\t\t$2",
-      "\t},",
-      "\tmutations: {",
-      "\t\t$3",
-      "\t},",
-      "\tactions: {",
-      "\t\t$0",
-      "\t}",
-      "}",
-      ""
-    ],
-    "description": "Export Default Vuex module",
-    "prefix": "export-default-vuex-module",
-    "scope": "javascript"
-  },
-  "Const storage": {
-    "body": [
-      "const ASSESS_TOKEN = 'assess_token'",
-      "",
-      "export function getAssessToken() {",
-      "\treturn localStorage.getItem(ASSESS_TOKEN)",
-      "}",
-      "",
-      "export function setAssessToken(assess_token) {",
-      "\tlocalStorage.setItem(ASSESS_TOKEN, assess_token)",
-      "}",
-      "",
-      "export function removeAssessToken() {",
-      "\tlocalStorage.removeItem(ASSESS_TOKEN)",
-      "}",
-      ""
-    ],
-    "description": "Const storage",
-    "prefix": "const-storage",
-    "scope": "javascript"
-  },
-  "Const Vuex module": {
-    "scope": "javascript",
-    "prefix": "const-vuex-module",
-    "body": [
-      "const state = {",
-      "\t$1",
-      "}",
-      "",
-      "const getters = {",
-      "\t$2",
-      "}",
-      "",
-      "const mutations = {",
-      "\t$3",
-      "}",
-      "",
-      "const actions = {",
-      "\t$4",
-      "}",
-      "",
-      "export default {",
-      "\tnamespaced: true,",
-      "\tstate,",
-      "\tgetters,",
-      "\tmutations,",
-      "\tactions",
-      "}",
-      ""
-    ],
-    "description": "Const Vuex module"
   }
 }
