@@ -322,5 +322,36 @@
     "description": "Const storage",
     "prefix": "const-storage",
     "scope": "javascript"
+  },
+  "Const Vuex module": {
+    "scope": "javascript",
+    "prefix": "const-vuex-module",
+    "body": [
+      "const state = {",
+      "\t$1",
+      "}",
+      "",
+      "const getters = {",
+      "\t$2",
+      "}",
+      "",
+      "const mutations = {",
+      "\t$3",
+      "}",
+      "",
+      "const actions = {",
+      "\t$4",
+      "}",
+      "",
+      "export default {",
+      "\tnamespaced: true,",
+      "\tstate,",
+      "\tgetters,",
+      "\tmutations,",
+      "\tactions",
+      "}",
+      ""
+    ],
+    "description": "Const Vuex module"
   }
 }
