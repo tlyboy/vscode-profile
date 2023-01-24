@@ -38,9 +38,9 @@
   "files.insertFinalNewline": true,
   "github.copilot.enable": {
     "*": true,
-    "yaml": false,
+    "markdown": false,
     "plaintext": false,
-    "markdown": false
+    "yaml": false
   },
   "github.gitProtocol": "ssh",
   "javascript.suggest.paths": false,
