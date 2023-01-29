@@ -36,12 +36,6 @@
   },
   "files.eol": "\n",
   "files.insertFinalNewline": true,
-  "github.copilot.enable": {
-    "*": true,
-    "markdown": false,
-    "plaintext": false,
-    "yaml": false
-  },
   "github.gitProtocol": "ssh",
   "javascript.suggest.paths": false,
   "liveServer.settings.donotShowInfoMsg": true,
