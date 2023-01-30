@@ -21,7 +21,6 @@
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
-  "editor.inlineSuggest.enabled": true,
   "editor.quickSuggestions": {
     "strings": true
   },
