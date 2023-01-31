@@ -142,14 +142,7 @@
     "scope": "javascript"
   },
   "Script": {
-    "body": [
-      "<script>",
-      "export default {",
-      "\tname: '$1'",
-      "}",
-      "</script>",
-      ""
-    ],
+    "body": ["<script>", "export default {", "\t$1", "}", "</script>", ""],
     "description": "Script",
     "prefix": "<script>",
     "scope": "vue"
@@ -216,7 +209,7 @@
       "",
       "<script>",
       "export default {",
-      "\tname: '$3'",
+      "\t$3",
       "}",
       "</script>",
       "",
@@ -237,7 +230,7 @@
       "",
       "<script>",
       "export default {",
-      "\tname: '$3'",
+      "\t$3",
       "}",
       "</script>",
       "",
@@ -288,7 +281,7 @@
       "",
       "<script>",
       "export default {",
-      "\tname: '$3'",
+      "\t$3",
       "}",
       "</script>",
       "",
