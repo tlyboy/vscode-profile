@@ -1,6 +1,6 @@
-# vscode-configs
+# vscode-profile
 
-Guany VS Code Configs.
+Guany VS Code profile.
 
 ## License
 
