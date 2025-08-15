@@ -1,3 +1,3 @@
-# cursor-profile
+# vscode-profile
 
-⚙︎ Guany Cursor profile
+⚙︎ Guany VS Code profile
